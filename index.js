@@ -134,11 +134,11 @@ client.on('interactionCreate', async interaction => {
             const desc = interaction.options.getString('descricao');
             
             const embed = new EmbedBuilder()
-                .setTitle('🐍 Adquirir Hydra / PIX')
+                .setTitle('<:emoji_46:1533156916438765618> Adquirir Hydra / PIX')
                 .setColor(0x3498DB) // Azul
                 .addFields(
                     { name: '🔑 Chave Pix', value: `\`${config.pixKey}\``, inline: false },
-                    { name: '👤 Beneficiário', value: config.pixName, inline: true },
+                    { name: '👤 BENEFICIÁRIO', value: config.pixName, inline: true },
                     { name: '💰 Valor', value: valor, inline: true }
                 )
                 .setFooter({ text: 'Após o pagamento, abra um ticket e envie o comprovante.' });
