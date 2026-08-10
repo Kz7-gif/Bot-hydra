@@ -138,7 +138,7 @@ client.on('interactionCreate', async interaction => {
                 .setColor(0x3498DB) // Azul
                 .addFields(
                     { name: '🔑 Chave Pix', value: `\`${config.pixKey}\``, inline: false },
-                    { name: '👤 BENEFICIÁRIO', value: config.pixName, inline: true },
+                    { name: '👤 Nome', value: config.pixName, inline: true },
                     { name: '💰 Valor', value: valor, inline: true }
                 )
                 .setFooter({ text: 'Após o pagamento, abra um ticket e envie o comprovante.' });
